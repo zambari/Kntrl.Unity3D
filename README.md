@@ -23,11 +23,11 @@ We have four objects here, the larger sphere is our value source, the value it r
 
 The values are then taken by two cubes, which apply a different set of processor modules, and apply the resulting value to the scale of the cube.
 
-![](docs/example.png "Value Flow")
+![](./docs/example.png "Value Flow")
 
 When represented more schematically, like this:
 
-![](docs/valueFlow.png "Value Flow")
+![](./docs/valueFlow.png "Value Flow")
 
 Each KntrlValue has the possibility to have its own 'effect chain' created by adding 'Processor' components to its gameObject. If no processors are added, an empty KntrlValue can serve as a proxy value (for exqample for distributig values to its children), so that re-routing the signal flow is clear and easy.
 
@@ -48,9 +48,9 @@ The nodes always point to the SOURCE of the value, never to target. The publishe
 
 
 
-![](docs/kntrold.png "Components")
+![](./docs/kntrold.png "Components")
 
-![](docs/diagram.png "Diagram")
+![](./docs/diagram.png "Diagram")
 
 
 ## Extending Kntrl
@@ -72,14 +72,14 @@ Also reffere to as value sinks, are the components that implement *IKntrlValueTa
 
 As long as you apply a float value in a meaningful way, your class can be a value target (value sink for Kntrl)
 
-![](docs/sliders_demo.png "Demo")
+![](./docs/sliders_demo.png "Demo")
 
 ###  Value Processors
 The most interesting part of the framework is the concept of processors (*IKntrlProcessValue* - they have a *GetProcessedValue(float inputValue)* method.
 
 There is also a neat base class provided for value processors, which enable you to create new ones with no more than a few lines (below is a screenshot of the complete code of one of the included processor - if you use the provided base class you only need to override one method)
 
-![](docs/processorExample.png "Processor")
+![](./docs/processorExample.png "Processor")
 
 This short youtube clip demonstrates one of the basic use scenarios (recorded with a slightly old version)
 
