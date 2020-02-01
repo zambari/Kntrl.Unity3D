@@ -496,11 +496,11 @@ RectTransform:
   m_Father: {fileID: 1021328118}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -198}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 20}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &38978969 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1966621936810326, guid: 491d754626d715c4b86cd414c56c12b4,
@@ -650,7 +650,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5281732
+  m_Value: 0.5275275
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -670,11 +670,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1288508385}
-    currentValueInput: 0.5281732
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.5281732
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -696,10 +696,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.5281732
-        _targetValue: 0.5281732
+        currentValue: 0.5275275
+        _targetValue: 0.5275272
         smoothTime: 0.1
-        velocity: 0
+        velocity: -0.0000035841233
       useDamper: 1
       delayValue:
         _delay: 0.39
@@ -712,8 +712,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.5281732
-    currentValueOutput: 0.5281732
+      lastOutputValue: 0.5275275
+    currentValueOutput: 0.5275275
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -1946,7 +1946,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5298277
+  m_Value: 0.5275272
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1966,11 +1966,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1340819493}
-    currentValueInput: 0.5298277
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.5298277
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -1992,8 +1992,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.5298277
-        _targetValue: 0.5298277
+        currentValue: 0.5275272
+        _targetValue: 0.5275272
         smoothTime: 0.1
         velocity: 0
       useDamper: 1
@@ -2008,8 +2008,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.5298277
-    currentValueOutput: 0.5298277
+      lastOutputValue: 0.5275272
+    currentValueOutput: 0.5275272
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -2182,7 +2182,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5284676
+  m_Value: 0.5275272
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2202,11 +2202,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 243194234}
-    currentValueInput: 0.5284676
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.5284676
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -2228,8 +2228,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.5284676
-        _targetValue: 0.5284676
+        currentValue: 0.5275272
+        _targetValue: 0.5275272
         smoothTime: 0.1
         velocity: 0
       useDamper: 1
@@ -2244,8 +2244,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.5284676
-    currentValueOutput: 0.5284676
+      lastOutputValue: 0.5275272
+    currentValueOutput: 0.5275272
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -2731,7 +2731,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.52989215
+  m_Value: 0.5275272
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2751,11 +2751,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1972322836}
-    currentValueInput: 0.52989215
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.52989215
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -2777,8 +2777,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.52989215
-        _targetValue: 0.52989215
+        currentValue: 0.5275272
+        _targetValue: 0.5275272
         smoothTime: 0.1
         velocity: 0
       useDamper: 1
@@ -2793,8 +2793,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.52989215
-    currentValueOutput: 0.52989215
+      lastOutputValue: 0.5275272
+    currentValueOutput: 0.5275272
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -4822,7 +4822,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.64068353
+  m_Value: 0.6539176
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4842,11 +4842,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 855945823}
-    currentValueInput: 0.6406831
+    currentValueInput: 0.653917
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.6406831
+      lastInputValue: 0.653917
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -4868,10 +4868,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.6406831
-        _targetValue: 0.6406831
+        currentValue: 0.6539175
+        _targetValue: 0.653917
         smoothTime: 0.2
-        velocity: 0
+        velocity: -0.0000024266647
       useDamper: 1
       delayValue:
         _delay: 0.55
@@ -4884,8 +4884,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.64068353
-    currentValueOutput: 0.64068353
+      lastOutputValue: 0.6539176
+    currentValueOutput: 0.6539176
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -6695,7 +6695,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5281732
+  m_Value: 0.5275272
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6715,11 +6715,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 504540743}
-    currentValueInput: 0.5281732
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.5281732
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -6741,8 +6741,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.5281732
-        _targetValue: 0.5281732
+        currentValue: 0.5275272
+        _targetValue: 0.5275272
         smoothTime: 0.1
         velocity: 0
       useDamper: 1
@@ -6757,8 +6757,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.5281732
-    currentValueOutput: 0.5281732
+      lastOutputValue: 0.5275272
+    currentValueOutput: 0.5275272
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -7696,7 +7696,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.6406823
+  m_Value: 0.65391755
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7716,11 +7716,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1783632303}
-    currentValueInput: 0.64068186
+    currentValueInput: 0.6539204
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.64068186
+      lastInputValue: 0.6539204
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -7742,10 +7742,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.64068186
-        _targetValue: 0.64068186
+        currentValue: 0.6539181
+        _targetValue: 0.6539204
         smoothTime: 0.2
-        velocity: 0
+        velocity: 0.0000114522545
       useDamper: 1
       delayValue:
         _delay: 0.55
@@ -7758,8 +7758,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.6406823
-    currentValueOutput: 0.6406823
+      lastOutputValue: 0.65391755
+    currentValueOutput: 0.65391755
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -8819,7 +8819,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5284676
+  m_Value: 0.5275272
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8839,11 +8839,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 227534569}
-    currentValueInput: 0.5284676
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.5284676
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -8865,8 +8865,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.5284676
-        _targetValue: 0.5284676
+        currentValue: 0.5275272
+        _targetValue: 0.5275272
         smoothTime: 0.1
         velocity: 0
       useDamper: 1
@@ -8881,8 +8881,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.5284676
-    currentValueOutput: 0.5284676
+      lastOutputValue: 0.5275272
+    currentValueOutput: 0.5275272
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -9152,7 +9152,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.6539946
+  m_Value: 0.65392345
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9240,10 +9240,10 @@ MonoBehaviour:
       useCurve: 1
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.6539946
+        currentValue: 0.65393627
         _targetValue: 0.6539946
         smoothTime: 0.2
-        velocity: 0
+        velocity: 0.00028544237
       useDamper: 1
       delayValue:
         _delay: 0.5
@@ -9256,8 +9256,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.6539946
-    currentValueOutput: 0.6539946
+      lastOutputValue: 0.65392345
+    currentValueOutput: 0.65392345
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -9381,7 +9381,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1024, y: 768}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.502
   m_PhysicalUnit: 3
@@ -10879,7 +10879,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.6406831
+  m_Value: 0.653917
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10899,11 +10899,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1104898102}
-    currentValueInput: 0.6406827
+    currentValueInput: 0.6539173
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.6406827
+      lastInputValue: 0.6539173
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -10925,10 +10925,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.6406827
-        _targetValue: 0.6406827
+        currentValue: 0.6539171
+        _targetValue: 0.6539173
         smoothTime: 0.2
-        velocity: 0
+        velocity: 0.0000011691869
       useDamper: 1
       delayValue:
         _delay: 0.55
@@ -10941,8 +10941,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.6406831
-    currentValueOutput: 0.6406831
+      lastOutputValue: 0.653917
+    currentValueOutput: 0.653917
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -11205,7 +11205,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.52989364
+  m_Value: 0.5275276
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11225,11 +11225,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1666355674}
-    currentValueInput: 0.52989364
+    currentValueInput: 0.52752787
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.52989364
+      lastInputValue: 0.52752787
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -11251,10 +11251,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.52989364
-        _targetValue: 0.52989364
+        currentValue: 0.5275276
+        _targetValue: 0.52752787
         smoothTime: 0.1
-        velocity: 0
+        velocity: 0.0000035841233
       useDamper: 1
       delayValue:
         _delay: 0.39
@@ -11267,8 +11267,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.52989364
-    currentValueOutput: 0.52989364
+      lastOutputValue: 0.5275276
+    currentValueOutput: 0.5275276
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -13077,7 +13077,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.52989215
+  m_Value: 0.5275272
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13097,11 +13097,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 521579746}
-    currentValueInput: 0.52989215
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.52989215
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -13123,8 +13123,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.52989215
-        _targetValue: 0.52989215
+        currentValue: 0.5275272
+        _targetValue: 0.5275272
         smoothTime: 0.1
         velocity: 0
       useDamper: 1
@@ -13139,8 +13139,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.52989215
-    currentValueOutput: 0.52989215
+      lastOutputValue: 0.5275272
+    currentValueOutput: 0.5275272
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -13307,10 +13307,10 @@ RectTransform:
   m_Father: {fileID: 740591156}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.14}
-  m_AnchorMax: {x: 1, y: 0.88}
-  m_AnchoredPosition: {x: -8.099976, y: -6}
-  m_SizeDelta: {x: -75.1, y: 90.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 5.674988}
+  m_SizeDelta: {x: -20, y: -127.949974}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1021328119
 MonoBehaviour:
@@ -14349,7 +14349,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.6406827
+  m_Value: 0.6539173
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14369,11 +14369,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 599956501}
-    currentValueInput: 0.6406823
+    currentValueInput: 0.6539173
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.6406823
+      lastInputValue: 0.6539173
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -14395,8 +14395,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.6406823
-        _targetValue: 0.6406823
+        currentValue: 0.6539173
+        _targetValue: 0.6539173
         smoothTime: 0.2
         velocity: 0
       useDamper: 1
@@ -14411,8 +14411,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.6406827
-    currentValueOutput: 0.6406827
+      lastOutputValue: 0.6539173
+    currentValueOutput: 0.6539173
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -14629,7 +14629,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.64977616
+  m_Value: 0.6539875
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14649,11 +14649,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1388909659}
-    currentValueInput: 0.649776
+    currentValueInput: 0.6539211
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.649776
+      lastInputValue: 0.6539211
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -14675,10 +14675,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.649776
-        _targetValue: 0.649776
+        currentValue: 0.65397555
+        _targetValue: 0.6539211
         smoothTime: 0.2
-        velocity: 0
+        velocity: -0.0002663674
       useDamper: 1
       delayValue:
         _delay: 0.55
@@ -14691,8 +14691,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.64977616
-    currentValueOutput: 0.64977616
+      lastOutputValue: 0.6539875
+    currentValueOutput: 0.6539875
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -14993,8 +14993,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -366.096, y: 33.05}
-  m_SizeDelta: {x: 732.1921, y: 20.66}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 32.4}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1123755558
 MonoBehaviour:
@@ -15034,8 +15034,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1422848096}
   m_HandleRect: {fileID: 1422848095}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.99998844
+  m_Value: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15439,7 +15439,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.6539946
+  m_Value: 0.65392214
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15459,11 +15459,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 715366137}
-    currentValueInput: 0.6539946
+    currentValueInput: 0.65392345
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.6539946
+      lastInputValue: 0.65392345
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -15485,10 +15485,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.6539946
-        _targetValue: 0.6539946
+        currentValue: 0.65392214
+        _targetValue: 0.65392345
         smoothTime: 0.1
-        velocity: 0
+        velocity: 0.00001701583
       useDamper: 1
       delayValue:
         _delay: 0.39
@@ -15501,8 +15501,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.6539946
-    currentValueOutput: 0.6539946
+      lastOutputValue: 0.65392214
+    currentValueOutput: 0.65392214
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -15959,7 +15959,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5298277
+  m_Value: 0.5275274
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15979,11 +15979,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 887515703}
-    currentValueInput: 0.5298277
+    currentValueInput: 0.5275276
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.5298277
+      lastInputValue: 0.5275276
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -16005,10 +16005,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.5298277
-        _targetValue: 0.5298277
+        currentValue: 0.5275274
+        _targetValue: 0.5275276
         smoothTime: 0.1
-        velocity: 0
+        velocity: 0.0000022339468
       useDamper: 1
       delayValue:
         _delay: 0.39
@@ -16021,8 +16021,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.5298277
-    currentValueOutput: 0.5298277
+      lastOutputValue: 0.5275274
+    currentValueOutput: 0.5275274
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -17126,7 +17126,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5281732
+  m_Value: 0.5275272
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17146,11 +17146,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 485250528}
-    currentValueInput: 0.5281732
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.5281732
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -17172,8 +17172,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.5281732
-        _targetValue: 0.5281732
+        currentValue: 0.5275272
+        _targetValue: 0.5275272
         smoothTime: 0.1
         velocity: 0
       useDamper: 1
@@ -17188,8 +17188,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.5281732
-    currentValueOutput: 0.5281732
+      lastOutputValue: 0.5275272
+    currentValueOutput: 0.5275272
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -17603,7 +17603,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5298277
+  m_Value: 0.52752733
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17623,11 +17623,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1186113856}
-    currentValueInput: 0.5298277
+    currentValueInput: 0.5275274
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.5298277
+      lastInputValue: 0.5275274
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -17649,10 +17649,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.5298277
-        _targetValue: 0.5298277
+        currentValue: 0.52752733
+        _targetValue: 0.5275274
         smoothTime: 0.1
-        velocity: 0
+        velocity: 0.0000008977823
       useDamper: 1
       delayValue:
         _delay: 0.39
@@ -17665,8 +17665,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.5298277
-    currentValueOutput: 0.5298277
+      lastOutputValue: 0.52752733
+    currentValueOutput: 0.52752733
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -18151,7 +18151,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.64068395
+  m_Value: 0.6539211
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -18171,11 +18171,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 392403867}
-    currentValueInput: 0.64068353
+    currentValueInput: 0.6539211
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.64068353
+      lastInputValue: 0.6539211
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -18197,8 +18197,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.64068353
-        _targetValue: 0.64068353
+        currentValue: 0.6539211
+        _targetValue: 0.6539211
         smoothTime: 0.2
         velocity: 0
       useDamper: 1
@@ -18213,8 +18213,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.64068395
-    currentValueOutput: 0.64068395
+      lastOutputValue: 0.6539211
+    currentValueOutput: 0.6539211
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -21441,7 +21441,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.52989364
+  m_Value: 0.5275277
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -21461,11 +21461,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 42845761}
-    currentValueInput: 0.52989364
+    currentValueInput: 0.5275275
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.52989364
+      lastInputValue: 0.5275275
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -21487,10 +21487,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.52989364
-        _targetValue: 0.52989364
+        currentValue: 0.5275277
+        _targetValue: 0.5275275
         smoothTime: 0.1
-        velocity: 0
+        velocity: -0.0000022339468
       useDamper: 1
       delayValue:
         _delay: 0.39
@@ -21503,8 +21503,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.52989364
-    currentValueOutput: 0.52989364
+      lastOutputValue: 0.5275277
+    currentValueOutput: 0.5275277
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -22526,7 +22526,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.65391755
+  m_Value: 0.6539204
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -22546,11 +22546,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1165348348}
-    currentValueInput: 0.65391815
+    currentValueInput: 0.6539204
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.65391815
+      lastInputValue: 0.6539204
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -22572,10 +22572,10 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.65391815
-        _targetValue: 0.65391815
+        currentValue: 0.6539204
+        _targetValue: 0.6539204
         smoothTime: 0.2
-        velocity: -4.2676253e-12
+        velocity: 0
       useDamper: 1
       delayValue:
         _delay: 0.55
@@ -22588,8 +22588,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.65391755
-    currentValueOutput: 0.65391755
+      lastOutputValue: 0.6539204
+    currentValueOutput: 0.6539204
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0
@@ -22726,7 +22726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000038885704, y: 0.000011330102}
+  m_AnchoredPosition: {x: 1163.0878, y: 0.000011330102}
   m_SizeDelta: {x: 0, y: 380.74}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1793704035
@@ -24816,7 +24816,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.52989215
+  m_Value: 0.5275272
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -24836,11 +24836,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1003963102}
-    currentValueInput: 0.52989215
+    currentValueInput: 0.5275272
     usePreview: 0
     message: No source
     modSection:
-      lastInputValue: 0.52989215
+      lastInputValue: 0.5275272
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -24862,8 +24862,8 @@ MonoBehaviour:
       useCurve: 0
       damper:
         deltaCutoff: 0.001
-        currentValue: 0.52989215
-        _targetValue: 0.52989215
+        currentValue: 0.5275272
+        _targetValue: 0.5275272
         smoothTime: 0.1
         velocity: 0
       useDamper: 1
@@ -24878,8 +24878,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.52989215
-    currentValueOutput: 0.52989215
+      lastOutputValue: 0.5275272
+    currentValueOutput: 0.5275272
   sliderUseMode: 4
   totalProcessors: 0
   activeProcessors: 0

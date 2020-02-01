@@ -27,6 +27,7 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
     void OnEnable()
     {
         GetProcessors();
+        OnValidate();
     }
     public void GetProcessors()
     {
@@ -37,9 +38,9 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
     }
     void Reset()
     {
-        if (name=="GameObject") name="KntrlValue "+zExt.RandomString(4);
-        if (name.Contains("Slider")) name+=" (KntrlValue)";
- 
+        if (name == "GameObject") name = "KntrlValue " + zExt.RandomString(4);
+        if (name.Contains("Slider")) name += " (KntrlValue)";
+
         transitionVisualizer = GetComponent<TransitionVisualizer>();
         if (transitionVisualizer == null) transitionVisualizer = gameObject.AddComponent<TransitionVisualizer>();
         slider = GetComponent<Slider>();
@@ -102,7 +103,7 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
             sliderUseMode = SliderUseMode.none;
         else
         {
-         //   sliderUseMode = SliderUseMode.auto;
+            //   sliderUseMode = SliderUseMode.auto;
         }
 
         if (sliderUseMode == SliderUseMode.auto)
