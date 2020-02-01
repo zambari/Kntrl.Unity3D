@@ -93,7 +93,7 @@ public abstract class KntrlTargetterBase : MonoBehaviour, IKntrlValueSource, IKn
 
     [ReadOnly] [SerializeField] int processorCount = 0;
     [ReadOnly] [SerializeField] int usedProcessorCount = 0;
-    float ProcessValue(float f)
+    public float ProcessValue(float f)
     {
         usedProcessorCount = 0;
         try

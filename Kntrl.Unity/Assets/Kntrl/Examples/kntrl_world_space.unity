@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -344,12 +344,13 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 354968301}
+  - component: {fileID: 354968302}
   - component: {fileID: 354968300}
   - component: {fileID: 354968299}
   - component: {fileID: 354968298}
   - component: {fileID: 354968297}
   - component: {fileID: 354968296}
+  - component: {fileID: 354968301}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -389,22 +390,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b3feead92f2294abc131a6e1d93044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _valueSource: {fileID: 1754866895}
-  sourceClassName: KntrlValue
-  _externalSource: 1
-  _currentValue: 0.353
-  processing:
-    applyProcessed: 1
-    processorCount: 1
-    usedProcessorCount: 1
-    outputPreview: 0.353
-    onlyWhenChanged: 0
-    applyToSlider: 0
-    alwaysUpdate: 0
+  inputSelector:
+    referenceGameObject: {fileID: 1754866895}
+    currentValueInput: 0.353
+    usePreview: 0
+    message: Src:KntrlValue Slider
+    modSection:
+      lastInputValue: 0.353
+      damper:
+        deltaCutoff: 0.001
+        currentValue: 0
+        _targetValue: 0
+        smoothTime: 0.1
+        velocity: 0
+      useDamper: 0
+      delayValue:
+        _delay: 0.5
+        _targetQueueLen: 30
+        queueLen: 0
+      useDelay: 0
+      animationCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      useCurve: 0
+      inputMap: {x: 0, y: 1}
+      useInputMap: 0
+      outputRange: {x: 0, y: 1}
+      clampMinMax: {x: 0, y: 1}
+      invert: 0
+      square: 0
+      lastOutputValue: 0.353
+    currentValueOutput: 0.353
+  processorCount: 1
+  usedProcessorCount: 1
   axis: 0
   scaleRange: {x: 0.5, y: 2}
-  targetTransform: {fileID: 354968301}
+  targetTransform: {fileID: 354968302}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!23 &354968298
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -458,19 +496,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 354968295}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &354968301
-Transform:
+--- !u!114 &354968301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 354968295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929ec1afa986a6b45ac00891c687c806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _source: {fileID: 1754866898}
+  color: {r: 1, g: 0.5, b: 0, a: 0.8}
+--- !u!224 &354968302
+RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 354968295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9109, y: 1.2333657, z: -1.2495275}
+  m_LocalPosition: {x: 0, y: 0, z: -1.2495275}
   m_LocalScale: {x: 1.0295, y: 1.0295, z: 1.0295}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.9109, y: 1.2333657}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &379183137
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,13 +633,14 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 651979113}
+  - component: {fileID: 651979114}
   - component: {fileID: 651979112}
   - component: {fileID: 651979111}
   - component: {fileID: 651979110}
   - component: {fileID: 651979109}
   - component: {fileID: 651979108}
   - component: {fileID: 651979107}
+  - component: {fileID: 651979113}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -641,22 +698,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b3feead92f2294abc131a6e1d93044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _valueSource: {fileID: 1754866895}
-  sourceClassName: KntrlValue
-  _externalSource: 1
-  _currentValue: 0.353
-  processing:
-    applyProcessed: 1
-    processorCount: 2
-    usedProcessorCount: 2
-    outputPreview: 0.353
-    onlyWhenChanged: 0
-    applyToSlider: 0
-    alwaysUpdate: 0
+  inputSelector:
+    referenceGameObject: {fileID: 1754866895}
+    currentValueInput: 0.353
+    usePreview: 0
+    message: Src:KntrlValue Slider
+    modSection:
+      lastInputValue: 0.353
+      damper:
+        deltaCutoff: 0.001
+        currentValue: 0
+        _targetValue: 0
+        smoothTime: 0.1
+        velocity: 0
+      useDamper: 0
+      delayValue:
+        _delay: 0.5
+        _targetQueueLen: 30
+        queueLen: 0
+      useDelay: 0
+      animationCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      useCurve: 0
+      inputMap: {x: 0, y: 1}
+      useInputMap: 0
+      outputRange: {x: 0, y: 1}
+      clampMinMax: {x: 0, y: 1}
+      invert: 0
+      square: 0
+      lastOutputValue: 0.353
+    currentValueOutput: 0.353
+  processorCount: 2
+  usedProcessorCount: 2
   axis: 0
   scaleRange: {x: 0.5, y: 2}
-  targetTransform: {fileID: 651979113}
+  targetTransform: {fileID: 651979114}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!23 &651979110
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -710,19 +804,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 651979106}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &651979113
-Transform:
+--- !u!114 &651979113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651979106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929ec1afa986a6b45ac00891c687c806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _source: {fileID: 1754866898}
+  color: {r: 1, g: 0.5, b: 0, a: 0.8}
+--- !u!224 &651979114
+RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 651979106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.36, y: 1.2333657, z: -1.2495275}
+  m_LocalPosition: {x: 0, y: 0, z: -1.2495275}
   m_LocalScale: {x: 1.0295, y: 1.0295, z: 1.0295}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.36, y: 1.2333657}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &678158337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,13 +1351,14 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1386122754}
+  - component: {fileID: 1386122755}
   - component: {fileID: 1386122753}
   - component: {fileID: 1386122752}
   - component: {fileID: 1386122751}
   - component: {fileID: 1386122750}
   - component: {fileID: 1386122749}
   - component: {fileID: 1386122748}
+  - component: {fileID: 1386122754}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -1303,22 +1416,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b3feead92f2294abc131a6e1d93044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _valueSource: {fileID: 1754866895}
-  sourceClassName: KntrlValue
-  _externalSource: 1
-  _currentValue: 0.353
-  processing:
-    applyProcessed: 1
-    processorCount: 2
-    usedProcessorCount: 2
-    outputPreview: 0.353
-    onlyWhenChanged: 0
-    applyToSlider: 0
-    alwaysUpdate: 0
+  inputSelector:
+    referenceGameObject: {fileID: 1754866895}
+    currentValueInput: 0.353
+    usePreview: 0
+    message: Src:KntrlValue Slider
+    modSection:
+      lastInputValue: 0.353
+      damper:
+        deltaCutoff: 0.001
+        currentValue: 0
+        _targetValue: 0
+        smoothTime: 0.1
+        velocity: 0
+      useDamper: 0
+      delayValue:
+        _delay: 0.5
+        _targetQueueLen: 30
+        queueLen: 0
+      useDelay: 0
+      animationCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      useCurve: 0
+      inputMap: {x: 0, y: 1}
+      useInputMap: 0
+      outputRange: {x: 0, y: 1}
+      clampMinMax: {x: 0, y: 1}
+      invert: 0
+      square: 0
+      lastOutputValue: 0.353
+    currentValueOutput: 0.353
+  processorCount: 2
+  usedProcessorCount: 2
   axis: 0
   scaleRange: {x: 0.5, y: 2}
-  targetTransform: {fileID: 1386122754}
+  targetTransform: {fileID: 1386122755}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!23 &1386122751
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1372,19 +1522,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1386122747}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1386122754
-Transform:
+--- !u!114 &1386122754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386122747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929ec1afa986a6b45ac00891c687c806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _source: {fileID: 1754866898}
+  color: {r: 1, g: 0.5, b: 0, a: 0.8}
+--- !u!224 &1386122755
+RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1386122747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8, y: 1.2333657, z: -1.2495275}
+  m_LocalPosition: {x: 0, y: 0, z: -1.2495275}
   m_LocalScale: {x: 1.0295, y: 1.0295, z: 1.0295}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.8, y: 1.2333657}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1507197151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,18 +1832,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a139b2a502e3fa43972d2378de9dbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _valueSource: {fileID: 0}
-  sourceClassName: None
-  _externalSource: 0
-  _currentValue: 0.353
-  processing:
-    applyProcessed: 0
-    processorCount: 0
-    usedProcessorCount: 0
-    outputPreview: 0.353
-    onlyWhenChanged: 0
-    applyToSlider: 1
-    alwaysUpdate: 0
+  inputSelector:
+    referenceGameObject: {fileID: 0}
+    currentValueInput: 0.353
+    usePreview: 1
+    message: '[Manual]'
+    modSection:
+      lastInputValue: 0.353
+      damper:
+        deltaCutoff: 0.001
+        currentValue: 0
+        _targetValue: 0
+        smoothTime: 0.1
+        velocity: 0
+      useDamper: 0
+      delayValue:
+        _delay: 0.5
+        _targetQueueLen: 30
+        queueLen: 0
+      useDelay: 0
+      animationCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      useCurve: 0
+      inputMap: {x: 0, y: 1}
+      useInputMap: 0
+      outputRange: {x: 0, y: 1}
+      clampMinMax: {x: 0, y: 1}
+      invert: 0
+      square: 0
+      lastOutputValue: 0.353
+    currentValueOutput: 0.353
+  sliderUseMode: 1
 --- !u!114 &1754866897
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,7 +7,8 @@ public class KntrlInputSwitch : MonoBehaviour, IKntrlValueSource
 {
     public KntrlSelector[] inputs;
 
-
+    [Range(0, 1)]
+    public float currentOutput;
     [ReadOnly] [SerializeField] string status;
     int _selectedInput;
 
@@ -28,7 +29,8 @@ public class KntrlInputSwitch : MonoBehaviour, IKntrlValueSource
     TransitionVisualizer[] visualizers;
     public float GetValue()
     {
-        return inputs[selectedInput].GetValue();
+        currentOutput = inputs[selectedInput].GetValue();
+        return currentOutput;
     }
 
     void HandleVisualizers()
