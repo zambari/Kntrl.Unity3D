@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 [ExecuteInEditMode]
-public class KntrlProximitySource : KntrlValueBase, IKntrlValueSource
+public class KntrlProximitySource : KntrlTargetterBase, IKntrlValueSource
 {
     [Header("Proximity source")]
     public Transform otherTransform;
@@ -18,7 +18,7 @@ public class KntrlProximitySource : KntrlValueBase, IKntrlValueSource
         if (maxRange <= 0) maxRange = 1;
         //GetValue();
 
-        SetValue(_currentValue);
+        // SetValue(_currentValue);
 
     }
 
@@ -54,8 +54,7 @@ public class KntrlProximitySource : KntrlValueBase, IKntrlValueSource
     {
         if (otherTransform != null)
         {
-            processing.outputPreview = GetDistanceValue();
-            SetValue(processing.outputPreview);
+            SetValue(GetDistanceValue());
         }
         // _currentValue = ;
 

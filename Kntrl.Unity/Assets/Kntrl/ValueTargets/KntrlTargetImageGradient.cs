@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
-public class KntrlTargetImageGradient : KntrlValueBase
+public class KntrlTargetImageGradient : KntrlTargetterBase
 {
 
     public Gradient gradient = zExt.HeatGradient();

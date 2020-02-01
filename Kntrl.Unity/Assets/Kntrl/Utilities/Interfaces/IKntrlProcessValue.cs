@@ -11,3 +11,8 @@ public interface IKntrlProcessValue
     string name { get; }
     bool enabled { get; }
 }
+
+public interface IKntrlGetProcessors
+{
+    void GetProcessors();
+}

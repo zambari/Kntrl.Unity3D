@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+[ExecuteInEditMode]
 public abstract class KntrlValueProcessorBase : MonoBehaviour, IKntrlProcessValue
 {
 
@@ -20,5 +20,18 @@ public abstract class KntrlValueProcessorBase : MonoBehaviour, IKntrlProcessValu
     {
         return input;
     }
+    protected virtual void OnEnable()
+    {
+        Nofity();
+    }
 
+    void Nofity()
+    {
+        IKntrlGetProcessors getProcessors = GetComponent<IKntrlGetProcessors>();
+        if (getProcessors != null) getProcessors.GetProcessors();
+    }
+    protected virtual void OnDisable()
+    {
+        Nofity();
+    }
 }

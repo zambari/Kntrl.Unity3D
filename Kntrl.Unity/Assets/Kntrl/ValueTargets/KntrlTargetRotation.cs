@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Z;
 
-public class KntrlTargetRotation : KntrlValueBase
+public class KntrlTargetRotation : KntrlTargetterBase
 {
 
     public enum RotAxis { X, Y, Z }
@@ -13,6 +13,7 @@ public class KntrlTargetRotation : KntrlValueBase
 
     public Vector2 angleRange = new Vector2(-20, 20);
     public Transform targetTransform;
+
     void Reset()
     {
         targetTransform = transform;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Z;
 [ExecuteInEditMode]
-public class KntrlTargetScale : KntrlValueBase
+public class KntrlTargetScale : KntrlTargetterBase
 {
     public enum ScaleAxis { All, X, Y, Z }
     [Header("Scaler")]
