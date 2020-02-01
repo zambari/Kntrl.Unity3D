@@ -16,13 +16,13 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
     [Header("Drag other Kntrl")]
     public KntrlSelector inputSelector = new KntrlSelector();
     TransitionVisualizer transitionVisualizer;
-    public enum SliderUseMode { none, readSourceValueFromSlider, writeInputToSlider, writeProcessed };
-    public SliderUseMode sliderUseMode;
+    public enum SliderUseMode { none, readSourceValueFromSlider, writeInputToSlider, writeProcessed, auto };
+    public SliderUseMode sliderUseMode = SliderUseMode.auto;
 
-    Slider mySlider;
+    Slider slider;
     IKntrlProcessValue[] processors;
-    [ReadOnly] int totalProcessors;
-    [ReadOnly] int activeProcessors;
+    [ReadOnly] [SerializeField] int totalProcessors;
+    [ReadOnly] [SerializeField] int activeProcessors;
 
     void OnEnable()
     {
@@ -37,20 +37,22 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
     }
     void Reset()
     {
-
+        if (name=="GameObject") name="KntrlValue "+zExt.RandomString(4);
+        if (name.Contains("Slider")) name+=" (KntrlValue)";
+ 
         transitionVisualizer = GetComponent<TransitionVisualizer>();
         if (transitionVisualizer == null) transitionVisualizer = gameObject.AddComponent<TransitionVisualizer>();
-        mySlider = GetComponent<Slider>();
-        if (mySlider != null)
+        slider = GetComponent<Slider>();
+        if (slider != null)
         {
-            sliderUseMode = SliderUseMode.readSourceValueFromSlider;
-            // inputSelector.referenceGameObject = mySlider.gameObject;
+            sliderUseMode = SliderUseMode.auto;
+            // inputSelector.referenceGameObject = slider.gameObject;
         }
 
-// #if UNITY_EDITOR
-//         for (int i = 0; i < 10; i++)
-//             UnityEditorInternal.ComponentUtility.MoveComponentUp(this);
-// #endif
+        // #if UNITY_EDITOR
+        //         for (int i = 0; i < 10; i++)
+        //             UnityEditorInternal.ComponentUtility.MoveComponentUp(this);
+        // #endif
         OnValidate();
 
     }
@@ -90,16 +92,27 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
         }
 
         inputSelector.OnValidate(this);
-        if (mySlider == null)
-            mySlider = GetComponent<Slider>();
-        // if (mySlider != null && mySlider.value != inputSelector.currentValueInput)
-        // {
-        //     mySlider.value = inputSelector.currentValueInput;
 
-        // }
-        if (mySlider == null)
-            sliderUseMode = SliderUseMode.none;
         UpateTransitionVisualiser();
+
+        if (slider == null)
+            slider = GetComponent<Slider>();
+
+        if (slider == null)
+            sliderUseMode = SliderUseMode.none;
+        else
+        {
+         //   sliderUseMode = SliderUseMode.auto;
+        }
+
+        if (sliderUseMode == SliderUseMode.auto)
+        {
+            float currentSliderValue = slider.value;
+            thisInputValue = inputSelector.GetValue();
+            if (currentSliderValue != thisInputValue)
+                slider.value = thisInputValue;
+
+        }
     }
 
     void UpateTransitionVisualiser()
@@ -114,22 +127,32 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
         }
     }
     float lastValueSetSliderValue;
-    [SerializeField]
-
+    float thisInputValue;
+    float lastInputValue;
     void Update()
     {
-        if (sliderUseMode == SliderUseMode.readSourceValueFromSlider)
+        thisInputValue = inputSelector.GetValue();
+        if (thisInputValue != lastInputValue)
         {
-            inputSelector.currentValueInput = mySlider.value;
+            SetSliderValue(thisInputValue);
+        }
+        lastInputValue = thisInputValue;
+        if (sliderUseMode == SliderUseMode.auto)//||
+        {
+            inputSelector.currentValueInput = slider.value;
+        }
+
+        if (sliderUseMode == SliderUseMode.readSourceValueFromSlider)//||
+        {
+            inputSelector.currentValueInput = slider.value;
         }
         else
         {
-            // lastInputValue = inputSelector.GetValue();
+            // thisInputValue = inputSelector.GetValue();
         }
-        var input = inputSelector.GetValue();
         // lastOutputValue = ProcessValue(input);
         if (sliderUseMode == SliderUseMode.writeInputToSlider)
-            SetSliderValue(input);
+            SetSliderValue(thisInputValue);
         else
      if (sliderUseMode == SliderUseMode.writeProcessed)
             SetSliderValue(inputSelector.modSection.lastOutputValue);
@@ -138,7 +161,8 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
     void SetSliderValue(float f)
     {
         if (f == lastValueSetSliderValue) return;
-        mySlider.value = f;
+        if (slider == null) return;
+        slider.value = f;
     }
 
     public float GetValue()
@@ -147,7 +171,7 @@ public class KntrlValue : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget, I
     }
 
     public void SetValue(float f)
-    {//will ignore slider
+    {
         inputSelector.SetValue(f);
     }
 }

@@ -50,6 +50,7 @@ public class KntrlSelector
         }
         if (usePreview) message = "[Manual]";
         lastGameObject = referenceGameObject;
+        modSection.OnValidate();
         GetValue();
     }
     public float ProcessValue(float f)
@@ -63,6 +64,8 @@ public class KntrlSelector
         {
             if (valueSource == null) //&& slider == null
             {
+                if (referenceGameObject == null) return currentValueInput;
+
                 valueSource = referenceGameObject.GetComponent<IKntrlValueSource>();
                 if (valueSource == null) referenceGameObject = null;
             }

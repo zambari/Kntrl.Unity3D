@@ -354,7 +354,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.103161715
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &8467669
@@ -420,6 +420,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 140975472}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &8467670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +542,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 140975472}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &8467672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,7 +890,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.175616
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &15107852
@@ -954,6 +956,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 2075688091}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &15107853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1075,6 +1078,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 2075688091}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &15107855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2281,7 +2285,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.7882687, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3464,7 +3468,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.007
+  m_Value: 0.12967399
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3483,11 +3487,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 92550916}
-    currentValueInput: 0
+    currentValueInput: 0.12967399
     usePreview: 0
-    message: No source
+    message: Src:KntrlGenerator Gen2
     modSection:
-      lastInputValue: 0
+      lastInputValue: 0.12967399
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -3525,8 +3529,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0
-    currentValueOutput: 0
+      lastOutputValue: 0.12967399
+    currentValueOutput: 0.12967399
   sliderUseMode: 2
 --- !u!114 &92550922
 MonoBehaviour:
@@ -3541,7 +3545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 0.71
   _shape: 1
-  outputPreview: 0
+  outputPreview: 0.000041276217
 --- !u!1 &93870943
 GameObject:
   m_ObjectHideFlags: 0
@@ -4697,6 +4701,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 793731066}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &114192077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4818,6 +4823,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 793731066}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &114192079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6903,6 +6909,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1180758242}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &186850526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7024,6 +7031,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1180758242}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &186850528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7214,10 +7222,10 @@ RectTransform:
   m_Father: {fileID: 846203855}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 310, y: 0}
-  m_SizeDelta: {x: 610, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 310, y: -81.16}
+  m_SizeDelta: {x: 610, y: 152.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &193776546
 MonoBehaviour:
@@ -8008,7 +8016,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.059776474
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &224920244
@@ -8074,6 +8082,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1892602908}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &224920245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8195,6 +8204,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1892602908}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &224920247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8794,7 +8804,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.008
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &260818122
@@ -9369,7 +9379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.01
+  m_Text: 0.33
 --- !u!222 &274758588
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9548,7 +9558,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.512
+  m_Value: 0.49590945
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9567,7 +9577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 0.71
   _shape: 2
-  outputPreview: 0
+  outputPreview: 0.49590945
 --- !u!114 &281896644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9594,11 +9604,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 281896639}
-    currentValueInput: 0
+    currentValueInput: 0.49590945
     usePreview: 0
-    message: No source
+    message: Src:KntrlGenerator Gen1
     modSection:
-      lastInputValue: 0
+      lastInputValue: 0.49590945
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -9636,8 +9646,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0
-    currentValueOutput: 0
+      lastOutputValue: 0.49590945
+    currentValueOutput: 0.49590945
   sliderUseMode: 2
 --- !u!1 &288632599
 GameObject:
@@ -10751,10 +10761,10 @@ RectTransform:
   m_Father: {fileID: 193776545}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 305, y: -128.32}
+  m_SizeDelta: {x: 600, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &322628168
 MonoBehaviour:
@@ -11363,7 +11373,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.008
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &340409063
@@ -11992,7 +12002,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.07840275
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &367073143
@@ -12262,7 +12272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.01
+  m_Text: 0.13
 --- !u!222 &369972279
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12348,7 +12358,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.18813252
+    smoothTime: 0.001225043
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &372890532
@@ -12414,6 +12424,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 948452248}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &372890533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12535,6 +12546,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 948452248}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &372890535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13334,7 +13346,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.20123008
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &413954360
@@ -13400,6 +13412,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 134144686}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &413954361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13521,6 +13534,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 134144686}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &413954363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14099,6 +14113,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 2089114360}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &426811344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14220,6 +14235,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 2089114360}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &426811346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14452,7 +14468,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.13109653
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &428774618
@@ -14518,6 +14534,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 83223955}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &428774619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14639,6 +14656,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 83223955}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &428774621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14849,6 +14867,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1948432102}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &433126017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14970,6 +14989,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1948432102}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &433126019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16225,7 +16245,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.3624671
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &464089062
@@ -16456,6 +16476,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 357038041}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &465288299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16577,6 +16598,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 357038041}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &465288301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17642,7 +17664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 0.71
   _shape: 2
-  outputPreview: 0
+  outputPreview: 0.7882687
 --- !u!114 &502698091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17704,7 +17726,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.512
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17728,10 +17750,10 @@ RectTransform:
   m_Father: {fileID: 193776545}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 305, y: -80.66}
+  m_SizeDelta: {x: 600, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &502853058
 GameObject:
@@ -18081,7 +18103,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.08693832
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &516197929
@@ -18147,6 +18169,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1018986229}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &516197930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18268,6 +18291,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1018986229}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &516197932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18582,7 +18606,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.038958225
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &517039589
@@ -18648,6 +18672,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1990203672}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &517039590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18769,6 +18794,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1990203672}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &517039592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19179,6 +19205,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 703332429}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &541236769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19300,6 +19327,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 703332429}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &541236771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19560,7 +19588,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.11408413
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &547139486
@@ -20131,6 +20159,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 369890791}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &571132746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20252,6 +20281,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 369890791}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &571132748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20451,11 +20481,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1794054567}
-    currentValueInput: 0.613
+    currentValueInput: 0.73451674
     usePreview: 0
     message: Src:KntrlTargetImageGradient Image
     modSection:
-      lastInputValue: 0.613
+      lastInputValue: 0.73451674
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -20465,8 +20495,8 @@ MonoBehaviour:
       useDamper: 0
       delayValue:
         _delay: 0.19
-        _targetQueueLen: 30
-        queueLen: 30
+        _targetQueueLen: 11
+        queueLen: 11
       useDelay: 1
       animationCurve:
         serializedVersion: 2
@@ -20493,8 +20523,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.613
-    currentValueOutput: 0.613
+      lastOutputValue: 0
+    currentValueOutput: 0
   processorCount: 0
   usedProcessorCount: 0
   gradient:
@@ -20551,7 +20581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8717737, g: 0.11941273, b: 0.26466906, a: 1}
+  m_Color: {r: 0.1172414, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20873,7 +20903,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.027000003
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &586805938
@@ -20939,6 +20969,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 290436597}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &586805939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21060,6 +21091,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 290436597}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &586805941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22612,7 +22644,7 @@ MonoBehaviour:
     outputValue: 0
   delayedValue:
     _delay: 2.6
-    _targetQueueLen: 155
+    _targetQueueLen: 156
     queueLen: 0
 --- !u!114 &649862520
 MonoBehaviour:
@@ -22632,7 +22664,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.04361421
+    smoothTime: 0.001225043
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &649862521
@@ -22698,6 +22730,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1621284236}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &649862522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22819,6 +22852,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1621284236}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &649862524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23962,7 +23996,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.079507
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &681412350
@@ -24028,6 +24062,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 12114694}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &681412351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24149,6 +24184,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 12114694}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &681412353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24293,7 +24329,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.001225043
+    smoothTime: 0.103161715
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &695301487
@@ -24359,6 +24395,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 584996699}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &695301488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24480,6 +24517,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 584996699}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &695301490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24645,11 +24683,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 582289267}
-    currentValueInput: 0.613
+    currentValueInput: 0
     usePreview: 0
     message: Src:KntrlTargetImageGradient Image (1)
     modSection:
-      lastInputValue: 0.613
+      lastInputValue: 0
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -24659,8 +24697,8 @@ MonoBehaviour:
       useDamper: 0
       delayValue:
         _delay: 0.19
-        _targetQueueLen: 30
-        queueLen: 30
+        _targetQueueLen: 11
+        queueLen: 11
       useDelay: 1
       animationCurve:
         serializedVersion: 2
@@ -24687,8 +24725,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.613
-    currentValueOutput: 0.613
+      lastOutputValue: 0
+    currentValueOutput: 0
   processorCount: 0
   usedProcessorCount: 0
   gradient:
@@ -24745,7 +24783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8717737, g: 0.11941273, b: 0.26466906, a: 1}
+  m_Color: {r: 0.1172414, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -27970,6 +28008,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 862853859}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &826300600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28091,6 +28130,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 862853859}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &826300602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28281,10 +28321,10 @@ RectTransform:
   m_Father: {fileID: 193776545}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 305, y: -37}
+  m_SizeDelta: {x: 600, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &829758045
 MonoBehaviour:
@@ -28360,7 +28400,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.512
+  m_Value: 0.7882687
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -28379,11 +28419,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 502698086}
-    currentValueInput: 0
+    currentValueInput: 0.7882687
     usePreview: 0
-    message: No source
+    message: Src:KntrlGenerator Slider
     modSection:
-      lastInputValue: 0
+      lastInputValue: 0.7882687
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -28421,8 +28461,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0
-    currentValueOutput: 0
+      lastOutputValue: 0.7882687
+    currentValueOutput: 0.7882687
   sliderUseMode: 1
 --- !u!1 &832913026
 GameObject:
@@ -28845,7 +28885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &846203855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28862,10 +28902,10 @@ RectTransform:
   m_Father: {fileID: 734951450}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 5, y: -24}
+  m_SizeDelta: {x: 620, y: 162.32}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &846203856
 MonoBehaviour:
@@ -30297,6 +30337,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1778868489}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &901239421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30418,6 +30459,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1778868489}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &901239423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32239,7 +32281,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 956945229}
-  m_LocalRotation: {x: 0, y: 0, z: -0.17656936, w: 0.9842882}
+  m_LocalRotation: {x: 0, y: 0, z: -0.36010274, w: 0.93291265}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -32264,11 +32306,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 2033361077}
-    currentValueInput: 0.613
+    currentValueInput: 0.49590945
     usePreview: 0
     message: Src:KntrlValue Hub
     modSection:
-      lastInputValue: 0.613
+      lastInputValue: 0.49590945
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -32306,8 +32348,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.613
-    currentValueOutput: 0.613
+      lastOutputValue: 0.49590945
+    currentValueOutput: 0.49590945
   processorCount: 0
   usedProcessorCount: 0
   axis: 2
@@ -34632,6 +34674,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 2048168145}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1037965859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34753,6 +34796,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 2048168145}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1037965861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35057,6 +35101,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 38307284}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1054555814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35178,6 +35223,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 38307284}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1054555816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36466,6 +36512,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 436789295}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1110760473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36587,6 +36634,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 436789295}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1110760475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36994,6 +37042,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 42670620}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1121814627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37115,6 +37164,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 42670620}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1121814629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37851,7 +37901,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.030959148
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &1160367725
@@ -39482,7 +39532,7 @@ MonoBehaviour:
     outputValue: 0
   delayedValue:
     _delay: 12.2
-    _targetQueueLen: 731
+    _targetQueueLen: 732
     queueLen: 0
 --- !u!114 &1192157390
 MonoBehaviour:
@@ -39568,6 +39618,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1652445256}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1192157392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39689,6 +39740,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1652445256}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1192157394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40518,6 +40570,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 842583522}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1207262533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40639,6 +40692,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 842583522}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1207262535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40782,11 +40836,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputs:
   - referenceGameObject: {fileID: 281896639}
-    currentValueInput: 0.613
-    usePreview: 1
-    message: '[Manual]'
+    currentValueInput: 0.49590945
+    usePreview: 0
+    message: Src:KntrlGenerator Gen1
     modSection:
-      lastInputValue: 0.613
+      lastInputValue: 0.49590945
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -40824,14 +40878,14 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.613
-    currentValueOutput: 0.613
+      lastOutputValue: 0.49590945
+    currentValueOutput: 0.49590945
   - referenceGameObject: {fileID: 92550916}
-    currentValueInput: 0
+    currentValueInput: 0.000041276217
     usePreview: 0
     message: Src:KntrlGenerator Gen2
     modSection:
-      lastInputValue: 0
+      lastInputValue: 0.000041276217
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -40869,14 +40923,14 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0
-    currentValueOutput: 0
+      lastOutputValue: 0.000041276217
+    currentValueOutput: 0.000041276217
   - referenceGameObject: {fileID: 1750288811}
-    currentValueInput: 0
+    currentValueInput: 0.58340955
     usePreview: 0
     message: Src:KntrlGenerator Gen3
     modSection:
-      lastInputValue: 0
+      lastInputValue: 0.58340955
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -40914,9 +40968,9 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0
-    currentValueOutput: 0
-  currentOutput: 0.613
+      lastOutputValue: 0.58340955
+    currentValueOutput: 0.58340955
+  currentOutput: 0.49590945
   status: input 0
 --- !u!114 &1220755341
 MonoBehaviour:
@@ -41713,7 +41767,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.03464598
+    smoothTime: 0.001225043
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &1244300675
@@ -41779,6 +41833,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 205219385}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1244300676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41900,6 +41955,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 205219385}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1244300678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42090,7 +42146,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -42272,6 +42328,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1336556854}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1248920111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42393,6 +42450,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1336556854}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1248920113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43745,6 +43803,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1997084356}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1292245926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43866,6 +43925,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1997084356}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1292245928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44486,7 +44546,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.001225043
     velocity: 0
   _smoothTime: 0.107
 --- !u!114 &1319972991
@@ -44552,6 +44612,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 87877966}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1319972992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44673,6 +44734,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 87877966}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1319972994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45263,6 +45325,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 195068408}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1338928180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45384,6 +45447,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 195068408}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1338928182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45786,7 +45850,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.99401206
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &1344856817
@@ -46360,7 +46424,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.027000003
+    smoothTime: 0.11408413
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &1367084751
@@ -46982,6 +47046,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1205770030}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1379212383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47103,6 +47168,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1205770030}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1379212385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47519,6 +47585,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1094752270}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1385595181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47640,6 +47707,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1094752270}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1385595183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48297,7 +48365,7 @@ MonoBehaviour:
     outputValue: 0
   delayedValue:
     _delay: 2.6
-    _targetQueueLen: 155
+    _targetQueueLen: 156
     queueLen: 0
 --- !u!114 &1416288455
 MonoBehaviour:
@@ -48383,6 +48451,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 866371112}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1416288457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48504,6 +48573,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 866371112}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1416288459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48906,6 +48976,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1472367507}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1424708402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49027,6 +49098,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1472367507}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1424708404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49437,7 +49509,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.56560934
+    smoothTime: 0.027000003
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &1427819121
@@ -49872,7 +49944,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.51
+  m_Text: 0.50
 --- !u!222 &1450475582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50058,6 +50130,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 582930292}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1452963975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50179,6 +50252,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 582930292}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1452963977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50734,10 +50808,10 @@ RectTransform:
   m_Father: {fileID: 322628167}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 66.235, y: -14}
+  m_SizeDelta: {x: 124.47, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476071998
 MonoBehaviour:
@@ -51223,7 +51297,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.51
+  m_Text: 0.79
 --- !u!222 &1498224668
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -51587,7 +51661,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.51
+  m_Text: 0.50
 --- !u!222 &1522291664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52171,6 +52245,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 385583775}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1548659929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52292,6 +52367,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 385583775}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1548659931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52965,8 +53041,8 @@ RectTransform:
   m_Father: {fileID: 2081165400}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -53586,6 +53662,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1785887565}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1587052498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53707,6 +53784,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1785887565}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1587052500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54334,6 +54412,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1102479728}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1605075012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54455,6 +54534,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1102479728}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1605075014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55835,6 +55915,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1387332651}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1644805652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55956,6 +56037,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1387332651}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1644805654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56508,6 +56590,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1282612506}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1663384419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56629,6 +56712,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1282612506}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1663384421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57698,6 +57782,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 18493156}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1705678509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57819,6 +57904,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 18493156}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1705678511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58186,6 +58272,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 1458779589}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1734211177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58307,6 +58394,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 1458779589}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1734211179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58557,7 +58645,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.007
+  m_Value: 0.33221918
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -58576,11 +58664,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1750288811}
-    currentValueInput: 0
+    currentValueInput: 0.33221918
     usePreview: 0
-    message: No source
+    message: Src:KntrlGenerator Gen3
     modSection:
-      lastInputValue: 0
+      lastInputValue: 0.33221918
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -58618,8 +58706,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0
-    currentValueOutput: 0
+      lastOutputValue: 0.33221918
+    currentValueOutput: 0.33221918
   sliderUseMode: 2
 --- !u!114 &1750288817
 MonoBehaviour:
@@ -58634,7 +58722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 0.91
   _shape: 0
-  outputPreview: 0
+  outputPreview: 0.58340955
 --- !u!1 &1750595912
 GameObject:
   m_ObjectHideFlags: 0
@@ -59804,11 +59892,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 2033361077}
-    currentValueInput: 0.613
+    currentValueInput: 0.49590945
     usePreview: 0
     message: Src:KntrlValue Hub
     modSection:
-      lastInputValue: 0.613
+      lastInputValue: 0.49590945
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -59846,8 +59934,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.613
-    currentValueOutput: 0.613
+      lastOutputValue: 0.49590945
+    currentValueOutput: 0.49590945
   processorCount: 0
   usedProcessorCount: 0
   gradient:
@@ -59904,7 +59992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8717737, g: 0.11941273, b: 0.26466906, a: 1}
+  m_Color: {r: 0.9956211, g: 0.20798603, b: 0.12861767, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -60697,6 +60785,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 482362461}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1820889277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60818,6 +60907,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 482362461}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1820889279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63375,6 +63465,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 516257834}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1937794824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63496,6 +63587,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 516257834}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1937794826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63864,7 +63956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 63.084988, y: 0}
+  m_AnchoredPosition: {x: 129.31163, y: 0}
   m_SizeDelta: {x: 52.8, y: 62.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948933160
@@ -63880,11 +63972,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 2033361077}
-    currentValueInput: 0.613
+    currentValueInput: 0.49590945
     usePreview: 0
     message: Src:KntrlValue Hub
     modSection:
-      lastInputValue: 0.613
+      lastInputValue: 0.49590945
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -63922,8 +64014,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.613
-    currentValueOutput: 0.613
+      lastOutputValue: 0.49590945
+    currentValueOutput: 0.49590945
   processorCount: 0
   usedProcessorCount: 0
   start: {x: -271, y: 0, z: 0}
@@ -64538,6 +64630,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 942889838}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1971565406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64659,6 +64752,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 942889838}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &1971565408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65637,8 +65731,8 @@ RectTransform:
   m_Father: {fileID: 868365827}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.7882687, y: 0}
+  m_AnchorMax: {x: 0.7882687, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -66083,7 +66177,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.56560934
+    smoothTime: 0.027000003
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &2016182444
@@ -66441,11 +66535,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 1220755336}
-    currentValueInput: 0.613
+    currentValueInput: 0.49590945
     usePreview: 0
     message: Src:KntrlInputSwitch Selector
     modSection:
-      lastInputValue: 0.613
+      lastInputValue: 0.49590945
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -66483,8 +66577,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.613
-    currentValueOutput: 0.613
+      lastOutputValue: 0.49590945
+    currentValueOutput: 0.49590945
   sliderUseMode: 0
 --- !u!1 &2041257058
 GameObject:
@@ -66948,6 +67042,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 954326787}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &2059663979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67069,6 +67164,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 954326787}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &2059663981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67536,11 +67632,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSelector:
     referenceGameObject: {fileID: 698745423}
-    currentValueInput: 0.613
+    currentValueInput: 0
     usePreview: 0
     message: Src:KntrlTargetImageGradient Image (2)
     modSection:
-      lastInputValue: 0.613
+      lastInputValue: 0
       damper:
         deltaCutoff: 0.001
         currentValue: 0
@@ -67550,8 +67646,8 @@ MonoBehaviour:
       useDamper: 0
       delayValue:
         _delay: 0.19
-        _targetQueueLen: 30
-        queueLen: 30
+        _targetQueueLen: 11
+        queueLen: 11
       useDelay: 1
       animationCurve:
         serializedVersion: 2
@@ -67578,8 +67674,8 @@ MonoBehaviour:
       clampMinMax: {x: 0, y: 1}
       invert: 0
       square: 0
-      lastOutputValue: 0.613
-    currentValueOutput: 0.613
+      lastOutputValue: 0
+    currentValueOutput: 0
   processorCount: 0
   usedProcessorCount: 0
   gradient:
@@ -67636,7 +67732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8717737, g: 0.11941273, b: 0.26466906, a: 1}
+  m_Color: {r: 0.1172414, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -68360,7 +68456,7 @@ MonoBehaviour:
     deltaCutoff: 0.001
     currentValue: 0
     _targetValue: 0
-    smoothTime: 0.8332376
+    smoothTime: 0.027000003
     velocity: 0
   _smoothTime: 0.3
 --- !u!114 &2098830526
@@ -68591,6 +68687,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 459085028}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &2099534182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68712,6 +68809,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 459085028}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &2099534184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69470,7 +69568,7 @@ MonoBehaviour:
     referenceGameObject: {fileID: 281896639}
     currentValueInput: 0
     usePreview: 0
-    message: No source
+    message: Src:KntrlGenerator Gen1
     modSection:
       lastInputValue: 0
       damper:
@@ -69572,7 +69670,7 @@ MonoBehaviour:
     outputValue: 0
   delayedValue:
     _delay: 12.2
-    _targetQueueLen: 731
+    _targetQueueLen: 732
     queueLen: 0
 --- !u!114 &2143030827
 MonoBehaviour:
@@ -69658,6 +69756,7 @@ MonoBehaviour:
   scaleRange: {x: 0.4, y: 3}
   targetTransform: {fileID: 318053886}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &2143030829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69779,6 +69878,7 @@ MonoBehaviour:
   scaleRange: {x: 20, y: 90}
   targetTransform: {fileID: 318053886}
   baseScale: 1
+  alwaysUpdate: 1
 --- !u!114 &2143030831
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,10 @@ public class ModSection
     [Range(0, 1)]
     // [HideInInspector]
     public float lastInputValue;
+    [Header("Curve")]
+    public AnimationCurve animationCurve = zExt.LinearCurve();
+
+    public bool useCurve;
     [Header("Damper")]
 
     public Damper damper = new Damper();
@@ -19,10 +23,7 @@ public class ModSection
 
     public bool useDelay;
 
-    [Header("Curve")]
-    public AnimationCurve animationCurve = zExt.LinearCurve();
 
-    public bool useCurve;
 
     [Header("Ranges")]
 
@@ -37,24 +38,29 @@ public class ModSection
 
     [Range(0, 1)]
     public float lastOutputValue;
+    public void OnValidate()
+    {
+        delayValue.OnValidate();
+    }
 
     public float ProcessValue(float f)
     {
         lastInputValue = f;
         if (useInputMap)
             f = inputMap.Map(f);
+        if (useCurve)
+            f = animationCurve.Evaluate(f);
         if (useDamper)
         {
-            f = damper.UpdatedValue();
             damper.targetValue = f;
+            f = damper.UpdatedValue();
         }
         if (useDelay)
         {
             delayValue.EnqueueValue(f);
             f = delayValue.OutputValue();
         }
-        if (useCurve)
-            f = animationCurve.Evaluate(f);
+
         // if (useOuputRange)
         f = outputRange.Map(f);
         if (square) f *= f;
