@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Toggle))]
+[ExecuteInEditMode]
 public class KntrlInputToggle : MonoBehaviour, IKntrlValueSource
 {
     Toggle toggle;
@@ -26,14 +27,16 @@ public class KntrlInputToggle : MonoBehaviour, IKntrlValueSource
 
                 toggle.isOn = value;
             }
-
         }
     }
     [SerializeField] bool _useInputB;
-
+    [Range(0, 1)]
+    [SerializeField] float outputPreview;
     void OnValidate()
     {
         useInputB = useInputB;
+        inputA.OnValidate(this);
+        inputB.OnValidate(this);
         var visualizers = GetComponents<TransitionVisualizer>();
         while (visualizers.Length < 2)
         {
@@ -43,9 +46,15 @@ public class KntrlInputToggle : MonoBehaviour, IKntrlValueSource
         visualizers[0].sourceTransform = inputA.referenceGameObjectTransform;
         visualizers[1].sourceTransform = inputB.referenceGameObjectTransform;
     }
-
+    void Update()
+    {
+        if (useInputB)
+            outputPreview = inputB.GetValue();
+        else
+            outputPreview = inputA.GetValue();
+    }
     public float GetValue()
     {
-        if (useInputB) return inputB.GetValue(); else return inputA.GetValue();
+        return outputPreview;
     }
 }

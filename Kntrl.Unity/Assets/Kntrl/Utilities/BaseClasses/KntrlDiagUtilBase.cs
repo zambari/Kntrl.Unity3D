@@ -2,31 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-  [ExecuteInEditMode]
-
+[ExecuteInEditMode]
+[RequireComponent(typeof(TransitionVisualizer))]
 public abstract class KntrlDiagUtilBase : MonoBehaviour
 {
 
-    protected IKntrlValueSource valueSource;
-    [ReadOnly] [SerializeField] string status = "none";
+    public KntrlSelector inputSelector = new KntrlSelector();
     protected float lastInput;
+   protected TransitionVisualizer transitionVisualizer;
     protected virtual void OnEnable()
     {
         lastInput = -1;
         GetSource();
     }
+    protected virtual void OnValidate()
+    {
+        GetSource();
+        inputSelector.OnValidate(this);
+        if (transitionVisualizer == null)
+            transitionVisualizer = GetComponent<TransitionVisualizer>();
+        if (transitionVisualizer == null) transitionVisualizer = gameObject.AddComponent<TransitionVisualizer>();
+        transitionVisualizer.sourceTransform = inputSelector.referenceGameObjectTransform;
+    }
     void GetSource()
     {
-        valueSource = GetComponentInParent<IKntrlValueSource>();
-        if (valueSource == null)
+        if (inputSelector.referenceGameObject == null)
         {
-            status = " no value source in parent ";
-        }
-        else
-        {
-            status = valueSource.GetType() + " on " + valueSource.name;
+            var vs = GetComponentInParent<IKntrlValueSource>();
+            if (vs != null)
+            {
+                inputSelector.referenceGameObject = vs.gameObject;
+                inputSelector.OnValidate(this);
+            }
         }
     }
-    
+
 }
 

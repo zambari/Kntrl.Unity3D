@@ -9,22 +9,22 @@ public class KntrlTargetLerpPosition : KntrlTargetterBase
     public Vector3 start;
     public Vector3 end;
     [Header("Check to enable editing")]
-    public bool dontApply;
+    public bool applyValue;
     [ExposeMethodInEditor]
     void SaveStart()
     {
         start = transform.localPosition;
-        dontApply = false;
+        inputSelector.currentValueInput = 0;
     }
     [ExposeMethodInEditor]
     void SaveEnd()
     {
         end = transform.localPosition;
-        dontApply = false;
+        inputSelector.currentValueInput = 1;
     }
     public override void ApplyValue(float f)
     {
-        if (!dontApply)
+        if (applyValue)
             transform.localPosition = Vector3.Lerp(start, end, f);
     }
     void Reset()
@@ -32,6 +32,10 @@ public class KntrlTargetLerpPosition : KntrlTargetterBase
         SaveStart();
         SaveEnd();
 
+    }
+    void Start()
+    {
+        if (Application.isPlaying) applyValue = true;
     }
     [ExposeMethodInEditor]
     void SaveOffset()

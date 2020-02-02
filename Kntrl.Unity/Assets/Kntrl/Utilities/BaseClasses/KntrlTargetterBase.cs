@@ -85,8 +85,8 @@ public abstract class KntrlTargetterBase : MonoBehaviour, IKntrlValueSource, IKn
     }
     public void SetValue(float f)
     {
-        // var i = inputSelector.GetValue();
-        f = inputSelector.ProcessValue(f);
+        inputSelector.currentValueInput=f;
+        f = inputSelector.currentValueOutput;
         f = ProcessValue(f);
         ApplyValue(f);
     }

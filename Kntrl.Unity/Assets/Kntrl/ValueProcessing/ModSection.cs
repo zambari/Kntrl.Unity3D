@@ -36,8 +36,8 @@ public class ModSection
     public bool invert;
     public bool square;
 
-    [Range(0, 1)]
-    public float lastOutputValue;
+    [Range(0, 1)][SerializeField] [HideInInspector]
+     float lastOutputValue;
     public void OnValidate()
     {
         delayValue.OnValidate();

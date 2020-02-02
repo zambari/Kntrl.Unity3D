@@ -22,9 +22,7 @@ public class KntrlValueChangedLed : KntrlDiagUtilBase
     bool wasLit;
     void Update()
     {
-        if (valueSource != null)
-        {
-            float thisInput = valueSource.GetValue();
+            float thisInput = inputSelector.GetValue();
             if (thisInput != lastInput)
             {
                 lastInput = thisInput;
@@ -40,7 +38,6 @@ public class KntrlValueChangedLed : KntrlDiagUtilBase
                 image.color = offColor;
                 wasLit = false;
             }
-        }
     }
 
 }

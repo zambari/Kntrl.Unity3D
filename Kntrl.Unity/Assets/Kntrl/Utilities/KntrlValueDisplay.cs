@@ -31,16 +31,16 @@ public class KntrlValueDisplay : KntrlDiagUtilBase
     }
     void OnValidate()
     {
-        if (text != null && valueSource != null)
+        if (text != null && inputSelector != null)
         {
-            PrintValue(valueSource.GetValue());
+            PrintValue(inputSelector.GetValue());
         }
     }
     void Update()
     {
-        if (valueSource != null)
+        if (inputSelector != null)
         {
-            float thisInput = valueSource.GetValue();
+            float thisInput = inputSelector.GetValue();
             if (thisInput != lastInput)
             {
                 lastInput = thisInput;
