@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 [AddComponentMenu("")]
-public abstract class KntrlValueBaseInternal : MonoBehaviour, IKntrlGetProcessors, IKntrlValueSource, IKntrlValueSourcePointer
+public abstract class KntrlValueBaseInternal : MonoBehaviour, IKntrlGetProcessors, IKntrlValueSource<float>, IKntrlValueSourcePointer
 {
 
     [Header("Drag other Kntrl")]
@@ -95,8 +95,9 @@ public abstract class KntrlValueBaseInternal : MonoBehaviour, IKntrlGetProcessor
         return outputPreview;
     }
 
-    public IKntrlValueSource GetSource()
+    public IKntrlValueSource<float> GetSource()
     {
       return inputSelector.valueSource;
     }
+
 }

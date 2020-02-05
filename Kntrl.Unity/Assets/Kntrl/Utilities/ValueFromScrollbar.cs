@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Scrollbar))]
-public class ValueFromScrollbar : MonoBehaviour,IKntrlValueSource
+public class ValueFromScrollbar : MonoBehaviour,IKntrlValueSource<float>
 {
     Scrollbar scrollbar;
     void OnEnable()

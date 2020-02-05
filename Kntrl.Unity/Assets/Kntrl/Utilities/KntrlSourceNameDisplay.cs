@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class KntrlSourceNameDisplay : KntrlDiagUtilBase
 {
-    // IKntrlValueSource lastValueSource;
+    // IKntrlValueSource<float> lastValueSource;
     Text text;
     float checkEveryNthSecond = 5;
     float nextCheck;
@@ -46,7 +46,7 @@ public class KntrlSourceNameDisplay : KntrlDiagUtilBase
         string label = "source unknown";
         if (sourcePointer != null)
         {
-            IKntrlValueSource source = sourcePointer.GetSource();
+            IKntrlValueSource<float> source = sourcePointer.GetSource();
 
             if (source != null)
             {
@@ -54,7 +54,7 @@ public class KntrlSourceNameDisplay : KntrlDiagUtilBase
             }
             else
             {
-                label = inputSelector.name;
+                label = "no source";
             }
 
         }

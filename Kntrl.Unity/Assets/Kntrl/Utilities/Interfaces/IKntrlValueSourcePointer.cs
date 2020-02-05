@@ -6,7 +6,7 @@ https://github.com/zambari/Kntrl.Unity3D
 */
 public interface IKntrlValueSourcePointer
 {
-    IKntrlValueSource GetSource();
+    IKntrlValueSource<float> GetSource();
 
     // implicitly implenetd by all monobehaviours
     string name { get; }

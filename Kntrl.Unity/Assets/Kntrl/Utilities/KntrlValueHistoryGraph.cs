@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 [RequireComponent(typeof(RawImage))]
-public class KntrlValueHistoryGraph : KntrlDiagUtilBase, IKntrlValueSourcePointer, IKntrlValueSource
+public class KntrlValueHistoryGraph : KntrlDiagUtilBase,  IKntrlValueSource<float> //IKntrlValueSourcePointer,
 {
     RawImage rawImage;
     public enum SamplingMode { sampleAndHold, average }
@@ -183,7 +183,7 @@ public class KntrlValueHistoryGraph : KntrlDiagUtilBase, IKntrlValueSourcePointe
         return thisInput;
     }
 
-    public IKntrlValueSource GetSource()
+    public IKntrlValueSource<float> GetSource()
     {
         return inputSelector.valueSource;
     }

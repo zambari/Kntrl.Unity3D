@@ -3,13 +3,15 @@
 
 https://github.com/zambari/Kntrl.Unity3D
 
+//v 2.0 generic
+
 */
-public interface IKntrlValueSource
+public interface IKntrlValueSource<T>
 {
-    float GetValue();
+    T GetValue();
 
     // implicitly implenetd by all monobehaviours
-    string name { get; }
+    // string  GetMessage();//
     bool enabled { get; }
     GameObject gameObject {get;}
     Transform transform {get;}

@@ -20,8 +20,9 @@ public class KntrlDamper : KntrlValueProcessorBase
         smoothTime = _smoothTime;
     }
     bool isFirstFrame;
-    void OnEnable()
+protected override    void OnEnable()
     {
+        base.OnEnable();
         isFirstFrame = true;
 
     }
