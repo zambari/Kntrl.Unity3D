@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [ExecuteInEditMode]
-public class KntrlGenerator : MonoBehaviour, IKntrlValueSource<float>
+public class KntrlGenerator : MonoBehaviour, IKntrlValueSource
 {
     public enum Shape { Ramp, Sin, Saw, RampInv }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 [ExecuteInEditMode]
-public class KntrlProximitySource : KntrlTargetterBase, IKntrlValueSource<float>
+public class KntrlProximitySource : KntrlTargetterBase, IKntrlValueSource
 {
     [Header("Proximity source")]
     public Transform otherTransform;

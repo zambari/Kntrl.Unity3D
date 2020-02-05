@@ -28,7 +28,7 @@ public abstract class KntrlDiagUtilBase : MonoBehaviour
     {
         if (inputSelector.referenceGameObject == null)
         {
-            var vs = GetComponentInParent<IKntrlValueSource<float>>();
+            var vs = GetComponentInParent<IKntrlValueSource>();
             if (vs != null)
             {
                 inputSelector.referenceGameObject = vs.gameObject;

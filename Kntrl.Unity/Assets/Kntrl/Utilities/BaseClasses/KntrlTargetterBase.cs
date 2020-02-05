@@ -7,7 +7,7 @@ using UnityEditor;
 #endif
 
 [ExecuteInEditMode]
-public abstract class KntrlTargetterBase : MonoBehaviour, IKntrlValueSource<float>, IKntrlValueTarget
+public abstract class KntrlTargetterBase : MonoBehaviour, IKntrlValueSource, IKntrlValueTarget
 {
     // void OnDrawGizmos()
     // {
@@ -36,7 +36,7 @@ public abstract class KntrlTargetterBase : MonoBehaviour, IKntrlValueSource<floa
     // public GameObject _valueSource;
     // [SerializeField] [HideInInspector] GameObject _lastValueSource;
 
-    // IKntrlValueSource<float> valueProvider;
+    // IKntrlValueSource valueProvider;
 
     IKntrlProcessValue[] processors = new IKntrlProcessValue[0];
 
@@ -131,13 +131,13 @@ public abstract class KntrlTargetterBase : MonoBehaviour, IKntrlValueSource<floa
         if (_valueSource != null)
         {
             bool foundSelf = false;
-            var providers = _valueSource.GetComponents<IKntrlValueSource<float>>();
+            var providers = _valueSource.GetComponents<IKntrlValueSource>();
             if (providers.Length > 0)
             {
 
                 for (int i = providers.Length - 1; i >= 0; i--)
                 {
-                    if (providers[i] != this as IKntrlValueSource<float>)
+                    if (providers[i] != this as IKntrlValueSource)
                     {
                         //                  if (valueProvider == null)
                         //                        Debug.Log("found  value provider " + providers[i].GetType(), gameObject);

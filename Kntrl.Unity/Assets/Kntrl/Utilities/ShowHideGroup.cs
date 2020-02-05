@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace Z.ShowHide
 {
-    public class ShowHideGroup : MonoBehaviour, IShowHide, IKntrlValueSource<float>
+    public class ShowHideGroup : MonoBehaviour, IShowHide, IKntrlValueSource
     {
         public float waitBeforeTrigger = 0;
         public enum TriggerMode { ishowhide, iapply }

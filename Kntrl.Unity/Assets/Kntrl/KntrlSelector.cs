@@ -5,23 +5,104 @@ using UnityEngine.UI;
 
 //zmiana
 [System.Serializable]
-public class KntrlSelector : GenericSelector<float, IKntrlValueSource<float>>
+public class KntrlSelector : GenericSelector<IKntrlValueSource>
 {
+    //[HideInInspector] 
+    public float currentValueOutput;
+    [Range(0, 1)]
+    [SerializeField] protected float _currentValueInput;
+    [Range(0, 1)] [SerializeField] protected float _lastValueInput;
+    bool _wasValueChangedInInspector;
 
 
     // [ReadOnly]
     // [SerializeField]
     // string message = "";
     public ModSection modSection = new ModSection();
-    public override float Process(float inVal)
+    public float Process(float inVal)
     {
         return modSection.ProcessValue(_currentValueInput); ;
     }
+    public bool overrideValue;
+
+
+    public float GetValue()
+    {
+        if (!overrideValue)
+        {
+            if (valueSource == null) //&& slider == null
+            {
+                if (referenceGameObject == null) return _currentValueInput;
+                // System.Type thistype=typeof(IKntrlValueSource<K>);
+                valueSource = referenceGameObject.GetComponent<IKntrlValueSource>();
+                if (valueSource == null) referenceGameObject = null;
+            }
+            if (valueSource != null)
+            {
+                if (_currentValueInput.Equals(_lastValueInput)) // ???
+                {
+                    currentValueInput = _currentValueInput;
+                }
+                else
+                {
+                    currentValueInput = valueSource.GetValue();
+                }
+            }
+        }
+        return currentValueOutput;
+    }
+
     public override void OnValidate(MonoBehaviour source)
     {
         base.OnValidate(source);
+        if (referenceGameObject == null && lastGameObject != null)
+        {
+            overrideValue = false;
+        }
+        if (_currentValueInput == _lastValueInput)
+        {
+            _lastValueInput = _currentValueInput;
+            _wasValueChangedInInspector = true;
+            // Debug.Log("move in inspector");
+        }
+        if (overrideValue || valueSource == null)
+            currentValueInput = _currentValueInput;
+        else
+            currentValueInput = valueSource.GetValue();
+
+
         modSection.OnValidate();
     }
+
+    public bool valueChangedInInspector
+    {
+        get
+        {
+            if (_wasValueChangedInInspector)
+            {
+                _wasValueChangedInInspector = false;
+                return true;
+            }
+            return false;
+
+        }
+    }
+
+    public float currentValueInput
+    {
+        get { return _currentValueInput; }
+        set
+        {
+            _currentValueInput = value;
+            _lastValueInput = value;
+            currentValueOutput = Process(value);
+        }
+    }
+    // public virtual float Process(float inVal)
+    // {
+    //     return inVal;
+    // }
+
     // [Range(0, 1)]
     // public 
     // [HideInInspector] public float currentValueOutput = 0.5f;
@@ -52,7 +133,7 @@ public class KntrlSelector : GenericSelector<float, IKntrlValueSource<float>>
     //     if (referenceGameObject != null)
     //     {
     //         if (valueSource == null || lastGameObject != referenceGameObject)
-    //             valueSource = referenceGameObject.GetComponent<IKntrlValueSource<float>>();
+    //             valueSource = referenceGameObject.GetComponent<IKntrlValueSource>();
     //         if (valueSource == null)
     //         {
     //             referenceGameObject = null;

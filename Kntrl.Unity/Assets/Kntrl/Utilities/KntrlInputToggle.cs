@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Toggle))]
 [ExecuteInEditMode]
-public class KntrlInputToggle : MonoBehaviour, IKntrlValueSource<float>
+public class KntrlInputToggle : MonoBehaviour, IKntrlValueSource
 {
     Toggle toggle;
     public KntrlSelector inputA = new KntrlSelector();

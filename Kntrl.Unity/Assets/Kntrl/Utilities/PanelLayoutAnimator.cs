@@ -11,7 +11,7 @@ using Z.PanelAnim;
 // v.0.1
 
 [ExecuteInEditMode]
-public class PanelLayoutAnimator : MonoBehaviour, IShowHide, IApply, IKntrlValueSource<float>
+public class PanelLayoutAnimator : MonoBehaviour, IShowHide, IApply, IKntrlValueSource
 {
 
     public bool startHidden = true;

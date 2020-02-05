@@ -6,9 +6,9 @@ https://github.com/zambari/Kntrl.Unity3D
 //v 2.0 generic
 
 */
-public interface IKntrlValueSource<T>
+public interface IKntrlValueSource
 {
-    T GetValue();
+    float GetValue();
 
     // implicitly implenetd by all monobehaviours
     // string  GetMessage();//
