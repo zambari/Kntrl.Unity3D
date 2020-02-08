@@ -37,15 +37,31 @@ public class KntrlSelector
             currentValueOutput = modSection.ProcessValue(_currentValueInput);
         }
     }
+    public KntrlSelector()
+    {
+    }
+
+    public KntrlSelector(Vector2 outputMap, Vector2 clamp)
+    {
+        modSection = new ModSection();
+        if (clamp == Vector2.zero)
+            clamp = outputMap;
+        modSection.outputMap = outputMap;
+        modSection.clampMinMax = clamp;
+    }
+
+    public KntrlSelector(Vector2 outputMap, bool square = false)
+    {
+        modSection = new ModSection();
+        modSection.outputMap = outputMap;
+        modSection.square = square;
+    }
     public bool overrideValue = true;
     [ReadOnly]
     [SerializeField]
     string message = "";
     public ModSection modSection = new ModSection();
-    // [Range(0, 1)]
-    // public 
-    [HideInInspector] public float currentValueOutput = 0.5f;
-
+    public float currentValueOutput = 0.5f;
     public Transform referenceGameObjectTransform { get { if (referenceGameObject == null) return null; return referenceGameObject.transform; } }
     bool _wasValueChangedInInspector;
     public bool valueChangedInInspector
@@ -61,8 +77,10 @@ public class KntrlSelector
 
         }
     }
+    float lastValidateTime;
     public void OnValidate(MonoBehaviour source)
     {
+        lastValidateTime = Time.time;
         if (_currentValueInput != _lastValueInput)
         {
             _lastValueInput = _currentValueInput;
@@ -113,9 +131,21 @@ public class KntrlSelector
 
         //GetValue();
     }
+    // public bool ov2;
 
+    bool ignoreLackOfOnValidate = false;
+    int warningCount = 0;
     public float GetValue()
     {
+        if (_currentValueInput != _lastValueInput && !ignoreLackOfOnValidate)
+        {
+            if (Time.time - lastValidateTime > 2)
+            {
+                Debug.LogError("please remember to call KntrlSelecto's OnValidate when callback is recieved by your mono");
+                warningCount++;
+                if (warningCount > 3) ignoreLackOfOnValidate = true;
+            }
+        }
         if (!overrideValue)
         {
             if (valueSource == null) //&& slider == null
@@ -181,9 +211,4 @@ public class KntrlSelector
         }
     }
 }
-[System.Obsolete("use KntrlSelector instead")]
-[System.Serializable]
-public class KntrlValueInputSelector : KntrlSelector
-{
 
-}

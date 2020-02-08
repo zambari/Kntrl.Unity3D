@@ -11,7 +11,7 @@ public class KntrlTargetRotation : KntrlTargetterBase
     [Header("Rotator")]
     public RotAxis axis = RotAxis.Z;
 
-    public Vector2 angleRange = new Vector2(-20, 20);
+    public Vector2 angleRange = new Vector2(-120, 120);
     public Transform targetTransform;
 
     void Reset()

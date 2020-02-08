@@ -313,7 +313,7 @@ public static class zExt
     {
         return new AnimationCurve(new Keyframe(0, 0, 1, 1), new Keyframe(1, 1, 1, 1));
     }
-      public static AnimationCurve LinearCurveDown()
+    public static AnimationCurve LinearCurveDown()
     {
         return new AnimationCurve(new Keyframe(1, 1, 1, 1), new Keyframe(0, 0, 1, 1));
     }
@@ -350,7 +350,10 @@ public static class zExt
         return g;
     }
 
-
+    public static string NameOrNull(this MonoBehaviour source)
+    {
+        return (source == null ? "null" : source.name);
+    }
     /* 
         #if UNITY_EDITOR
     public static void SetTextureImporterFormat( this Texture2D texture, bool isReadable)
